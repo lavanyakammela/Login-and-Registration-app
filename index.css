@@ -1,0 +1,76 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Shared background gradient */
+.modern-bg {
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+}
+
+/* Glassmorphism for cards/containers */
+.modern-glass {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Signup form styles */
+.signup-wrapper input {
+  color: #fff;
+  font-weight: 300;
+}
+
+.signup-wrapper input::placeholder {
+  color: #fff;
+}
+
+ /* Hero background for home page */
+.hero {
+  background-image: url('src/assets/nature1.jpg');
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Big title class (optional usage) */
+.title {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.header {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+.text-light {
+  color: #f8f9fa;
+}
