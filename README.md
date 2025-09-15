@@ -1,12 +1,97 @@
-# React + Vite
+# MERN Login and Registration App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **Login and Registration system** built with the **MERN (MongoDB, Express.js, React.js, Node.js) stack**.
+This project demonstrates user authentication, registration, and secure login functionality with integration of frontend and backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* 🔑 User Registration with validation
+* 🔐 User Login with authentication
+* 📦 Backend API built with **Node.js + Express.js**
+* 🗄️ Database using **MongoDB + Mongoose**
+* ⚛️ Frontend with **React.js**
+* 🎨 Styled with **HTML, CSS, and JavaScript**
+* 🔄 Full stack integration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+
+* React.js
+* HTML
+* CSS
+* JavaScript
+
+**Backend:**
+
+* Node.js
+* Express.js
+
+**Database:**
+
+* MongoDB (with Mongoose ORM)
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/mern-auth-app.git
+cd mern-auth-app
+```
+
+### 2️⃣ Setup Backend
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file inside the **backend** folder:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+Run the backend server:
+
+```bash
+npm start
+```
+
+### 3️⃣ Setup Frontend
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+The React app will run on **[http://localhost:3000](http://localhost:3000)** and backend on **[http://localhost:5000](http://localhost:5000)**.
+
+---
+
+## 🔐 API Endpoints
+
+### Authentication Routes
+
+* `POST /api/auth/register` → Register a new user
+* `POST /api/auth/login` → Login user and return JWT
+
+
+## 📌 Future Enhancements
+
+* ✅ Email verification
+* ✅ Admin dashboard
+* ✅ Profile management
+
+
+
